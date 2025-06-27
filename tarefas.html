@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Tarefas</title>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/estilo_tarefas.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" xintegrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <main class="task-manager-container">
+        <header>
+            <h1>Gerenciador de Tarefas</h1>
+        </header>
+
+        <section id="add-task-section">
+            <form id="add-task-form">
+                <input type="text" id="task-input" placeholder="Adicione uma nova tarefa..." autocomplete="off">
+                <button type="submit" class="btn-add">
+                    <i class="fas fa-plus"></i>
+                    <span class="d-none d-md-inline">Adicionar</span>
+                </button>
+            </form>
+        </section>
+
+        <section id="tasks-section">
+            <ul id="task-list">
+                <!-- As tarefas serão inseridas aqui via JavaScript -->
+            </ul>
+        </section>
+    </main>
+    
+    <!-- Modal for editing tasks -->
+    <div class="modal-overlay" id="edit-modal">
+        <div class="modal-content">
+            <h2>Editar Tarefa</h2>
+            <input type="text" id="edit-input">
+            <div class="modal-actions">
+                <button class="btn btn-cancel" id="cancel-edit-btn">Cancelar</button>
+                <button class="btn btn-save" id="save-edit-btn">Salvar</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>

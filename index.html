@@ -1,36 +1,85 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Gerenciador de tarefas - Organize suas tarefas de forma eficiente.">
-    <meta name="keywords" content="terefas, gerenciador de tarefas, produtividade, organização">
-    <meta name="author" content="jorge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/estilo.css">
-    <title>Gerenciador de Tarefas</title>
+    <title>SGT | Gerenciador de tarefas</title>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/estilo_login.css">
 </head>
 <body>
-    <div class="container-principal">
-      <h1>Gerenciador de tarefas</h1>
-    <div class="container-form">
-       
-        <main>
-          <h1>nota 1</h1>
-          <form>
-         <label>Título</label>
-          <input type="text" placeholder="Seu título ">
-          <label>Descrição</label>
-          <input type="text" placeholder="Descrição">
-          <button type="submit" class="submit">Adicionar</button>
-           <button class="submit">Excluir</button>
-          </form>
-          </main>
-    </div><!--fim form-->
-    
-    </div><!--Fim-principal-->
 
-    
+    <main class="login-container">
+            
+        <!-- Seção do Formulário (Esquerda) -->
+        <section class="form-section">
+            <h1 class="title">Bem-vindo ao SGT</h1>
+            <p class="subtitle">
+                Por favor, insira seus dados para continuar.
+            </p>
 
+            <form class="login-form">
+                <!-- Campo de Email -->
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email"
+                        placeholder="seu.email@exemplo.com"
+                        class="form-input"
+                        required>
+                </div>
+
+                <!-- Campo de Senha -->
+                <div class="form-group">
+                    <label for="password" class="form-label">Senha</label>
+                    <input 
+                        type="password" 
+                        id="password" 
+                        name="password"
+                        placeholder="Sua senha"
+                        class="form-input"
+                        required>
+                </div>
+
+                <!-- Opções (Lembrar-me e Esqueceu a senha) -->
+                <div class="form-options">
+                    <div class="remember-me">
+                        <input type="checkbox" name="remember" id="remember">
+                        <label for="remember" class="font-medium">Lembrar-me</label>
+                    </div>
+                    <a href="#" class="form-link">Esqueceu a senha?</a>
+                </div>
+                
+                <!-- Botão de Login -->
+                <button type="submit" class="submit-button">
+                    Entrar
+                </button>
+            </form>
+            
+            <!-- Link para Cadastro -->
+            <div class="signup-link">
+                <p>
+                    Não tem uma conta? 
+                    <a href="#" class="form-link">Cadastre-se</a>
+                </p>
+            </div>
+        </section>
+
+        <!-- Seção da Imagem/Logo (Direita) -->
+        <section class="image-section">
+            <img 
+                src="imgs/SGT (1).png"
+                alt="Imagem representando a marca da empresa"
+                onerror="this.onerror=null;this.src='https://placehold.co/600x800/cccccc/ffffff?text=Erro+ao+carregar+imagem';">
+        </section>
+
+    </main>
 
 </body>
 </html>
