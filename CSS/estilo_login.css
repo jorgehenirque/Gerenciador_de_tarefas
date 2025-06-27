@@ -188,8 +188,7 @@ body {
     display: none;
   }
   .footer {
-    position: relative;
+    position: fixed;
     bottom: 0;
-    padding: 1rem; /* 16px */
   }
 }
