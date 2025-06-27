@@ -187,4 +187,9 @@ body {
   .image-section {
     display: none;
   }
+  .footer {
+    position: relative;
+    bottom: 0;
+    padding: 1rem; /* 16px */
+  }
 }
