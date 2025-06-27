@@ -39,6 +39,15 @@ body {
   max-width: 900px;
   width: 100%;
 }
+.footer{
+  width: 100%;
+  background-color: graylight;
+  color: white;
+  text-align: center;
+  padding: 1rem; /* 16px */
+  position: absolute;
+  bottom: 0;
+}
 
 /* Seção do formulário (Esquerda) */
 .form-section {
