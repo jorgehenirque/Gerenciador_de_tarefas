@@ -248,7 +248,32 @@ header h1 {
 .btn-cancel:hover {
   background-color: #f3f4f6;
 }
+/* Barra de pesquisa no canto superior direito */
+#search-section {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1.5rem;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+}
 
+.search-input {
+  width: 250px;
+  padding: 0.6rem 1rem;
+  border: 1px solid var(--border-gray);
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+  justify-content: center;
+  justify-items: center;
+}
+
+.search-input:focus {
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
 /* Responsive Design */
 @media (max-width: 600px) {
   body {

@@ -138,3 +138,19 @@
             // Initial render on page load
             renderTasks();
         });
+        // ...existing code...
+
+// Função para filtrar tarefas
+function filtrarTarefas() {
+    const termo = document.getElementById('search-input').value.toLowerCase();
+    const tarefas = document.querySelectorAll('#task-list li');
+    tarefas.forEach(tarefa => {
+        const texto = tarefa.textContent.toLowerCase();
+        tarefa.style.display = texto.includes(termo) ? '' : 'none';
+    });
+}
+
+// Adiciona o evento de input ao campo de pesquisa
+document.getElementById('search-input').addEventListener('input', filtrarTarefas);
+
+// ...existing code...
