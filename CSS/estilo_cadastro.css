@@ -25,10 +25,8 @@
 }
 
 body {
-     background: linear-gradient(
-    to bottom right,
-    rgb(51, 85, 151),
-    rgb(136, 159, 205)
+ background: linear-gradient(
+    to bottom right,#2c3e50, #bdc3c7
   );
     display: flex;
     flex-direction: column;
